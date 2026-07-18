@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Damian Rocca Photography</title>
+<meta name="description" content="Book a family portrait session in Sydney's Northern Beaches or North West.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="mono">DRP</span> Damian Rocca Photography</a>
+    <button class="navtoggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Rates</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="cta current">Book a session</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:24px;">
+    <div class="wrap">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Let's find a time that suits.</h1>
+      <p class="lede">Send a few details below and I'll reply within a day or two with availability and next steps.</p>
+    </div>
+    <hr class="horizon tight">
+  </section>
+
+  <section style="padding-top:8px;">
+    <div class="wrap cols-2">
+      <div>
+        <!--
+          Formspree setup:
+          1. Create a free account at formspree.io
+          2. Create a new form, copy the form ID it gives you (looks like "abcdwxyz")
+          3. Replace YOUR_FORM_ID below with that ID
+        -->
+        <form class="contact" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div>
+            <label for="session">Session type</label>
+            <select id="session" name="session">
+              <option>Mini Session — $199</option>
+              <option>Full Session — $349</option>
+              <option>Event Photography — from $500</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Tell me a little about who's involved and when you're hoping to shoot</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary" style="align-self:flex-start;">Send enquiry</button>
+          <p class="form-status"></p>
+        </form>
+      </div>
+
+      <div>
+        <h3>Details</h3>
+        <div class="contact-detail"><span class="k">Email</span><span>hello@damianroccaphotography.com.au</span></div>
+        <div class="contact-detail"><span class="k">Service area</span><span>Northern Beaches &amp; North West Sydney</span></div>
+        <div class="contact-detail"><span class="k">Availability</span><span>Weekends</span></div>
+        <div class="contact-detail"><span class="k">Instagram</span><span><a href="https://instagram.com" target="_blank" rel="noopener">@damianroccaphotography</a></span></div>
+
+        <div class="notice" style="margin-top:24px;">
+          A deposit confirms your booking date. Full details on deposits and rescheduling are sent with your booking confirmation.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Damian Rocca Photography. Sydney, Australia.</p>
+    <div class="social-links">
+      <a href="contact.html">Contact</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
