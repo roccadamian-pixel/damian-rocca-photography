@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquire — Damian Rocca Photography</title>
+<meta name="description" content="Enquire about a family session or event photography in Sydney.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="mono">DR</span><span class="fullname">Damian Rocca Photography</span></a>
+    <button class="navtoggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="navlinks">
+      <a href="about.html">About</a>
+      <a href="family.html">Family</a>
+      <a href="events.html">Events</a>
+      <a href="inquire.html" class="enquire current">Enquire</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero-full hero-half">
+    <div class="placeholder-tag">Family walking away, hand in hand</div>
+    <div class="hero-copy">
+      <span class="label">Enquire</span>
+      <h1>Let's find a time that suits.</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap" style="display:grid; grid-template-columns: 1.2fr 0.8fr; gap:64px;">
+      <div>
+        <form class="contact" action="https://formspree.io/f/xlgqbkgw" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div>
+            <label for="session">What are you after?</label>
+            <select id="session" name="session">
+              <option>Family — Mini Session</option>
+              <option>Family — Full Session</option>
+              <option>Event photography</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Tell me a little about who's involved and when you're hoping to shoot</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn solid" style="align-self:flex-start;">Send enquiry</button>
+          <p class="form-status"></p>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-detail">
+          <span class="label">Email</span>
+          <span class="value">hello@damianroccaphotography.com.au</span>
+        </div>
+        <div class="contact-detail">
+          <span class="label">Service area</span>
+          <span class="value">Northern Beaches &amp; North West Sydney</span>
+        </div>
+        <div class="contact-detail">
+          <span class="label">Availability</span>
+          <span class="value">Weekends</span>
+        </div>
+        <div class="contact-detail">
+          <span class="label">Instagram</span>
+          <span class="value"><a href="https://instagram.com" target="_blank" rel="noopener">@damianroccaphotography</a></span>
+        </div>
+        <div class="notice" style="margin-top:28px;">
+          A deposit confirms your booking date. Full details on deposits and rescheduling are sent with your booking confirmation.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>&copy; 2026 Damian Rocca Photography. Sydney, Australia.</p>
+    <div class="social-links">
+      <a href="inquire.html">Enquire</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
